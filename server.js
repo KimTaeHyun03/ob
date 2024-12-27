@@ -52,3 +52,6 @@ app.get('*', (req, res) => {
 });
 
 
+app.post('/api/add',(req,res)=>{
+  
+});
