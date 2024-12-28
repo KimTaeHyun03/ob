@@ -1,11 +1,12 @@
 .titlebar{
-  background:black;
+  background-color: rgb(200,0,0);
   height:60px;
-  color:red;
+  color:white;
   font-size:40px;
   display:flex;
   justify-content:center;
   align-items:center;
+  
 }
 
 .title{

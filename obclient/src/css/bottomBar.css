@@ -7,7 +7,7 @@
   bottom: 0;                /* 하단 위치 */
   width: 100%;              /* 전체 너비 */
   height: 60px;             /* 바의 높이 */
-  background-color: black;   /* 배경색 */
+  background-color: rgb(20,20,20);
   display: flex;            /* Flexbox로 정렬 */
   justify-content: space-around; /* 항목 간격 균등 분배 */
   align-items: center;      /* 수직 중앙 정렬 */
@@ -16,7 +16,7 @@
   padding: 0;               /* 내부 여백 제거 */
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 상단 그림자 */
   z-index: 1000;            /* 위쪽에 표시 */
-  color: red;             /* 텍스트 색상 */
+  color: rgb(200,0,0);             /* 텍스트 색상 */
   
 }
 
