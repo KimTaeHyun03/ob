@@ -17,7 +17,8 @@ import { configureStore, createSlice } from '@reduxjs/toolkit'
 					  name:'rewardStore',
 					  initialState:{
 					  	  title:'',
-					  	  context:''
+					  	  context:'',
+					  	  cost:0,
 					  },
 					  reducers:{
 					  	  changeTitle(state,action){
@@ -25,6 +26,9 @@ import { configureStore, createSlice } from '@reduxjs/toolkit'
 					  	  },
 					  	  changeContext(state,action){
 					  	  	  state.context = action.payload;
+					  	  },
+					  	  changeCost(state,action){
+					  	  	  state.cost = action.payload;
 					  	  }
 					  	  
 					  	  
@@ -37,7 +41,7 @@ import { configureStore, createSlice } from '@reduxjs/toolkit'
 //형식
 //export let {함수이름} = 슬라이스명.actions;
 export let {changeValue} = modal.actions;
-export let {changeTitle,changeContext} = rewardStore.actions;
+export let {changeTitle,changeContext,changeCost} = rewardStore.actions;
 
 //state export
 export default configureStore({

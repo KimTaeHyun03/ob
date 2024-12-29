@@ -57,6 +57,16 @@ app.get('*', (req, res) => {
 
 
 app.post('/api/add',(req,res)=>{
-  
+  try{
+    let {title,context,cost} = req.body;
+    res.status(200).send('데이터 삽입 성공'); 
+  						  
+    
+  } catch{
+    res.status(400).send('데이터 삽입 실패');
+  						  
+      
+  }
+    
 });
 
